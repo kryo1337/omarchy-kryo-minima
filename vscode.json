@@ -4,20 +4,23 @@
   "settings": {
     "workbench.colorCustomizations": {
       "[Dracula]": {
-        "focusBorder": "#C80050",
-        "button.background": "#C80050",
-        "button.hoverBackground": "#A00040",
+        "focusBorder": "#26292f",
+        "button.background": "#A00040",
+        "button.hoverBackground": "#C80050",
         "textLink.foreground": "#C80050",
         "textLink.activeForeground": "#A00040",
         "editorCursor.foreground": "#C80050",
         "terminalCursor.foreground": "#C80050",
-        "editorLineNumber.activeForeground": "#C80050",
+        "editorLineNumber.activeForeground": "#d4d4d4",
         "list.highlightForeground": "#C80050",
-        "progressBar.background": "#C80050",
-        "editorWidget.border": "#C80050",
-        "pickerGroup.foreground": "#C80050",
+        "progressBar.background": "#A00040",
+        "editorWidget.border": "#26292f",
+        "editorWidget.background": "#181a1d",
+        "pickerGroup.foreground": "#80868f",
         "tab.activeBorder": "#C80050",
-        "notificationLink.foreground": "#C80050"
+        "notificationLink.foreground": "#C80050",
+        "sideBar.background": "#111214",
+        "sideBarSectionHeader.background": "#181a1d"
       }
     }
   }

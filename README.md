@@ -5,14 +5,14 @@ A Dark minimalistic theme for Omarchy
 # Installation
 
 ```bash
-omarchy-theme-install https://github.com/kryo1337/omarchy-minima
+omarchy-theme-install https://github.com/kryo1337/omarchy-kryo-minima
 ```
 
 or
 
 `Omarchy menu > Install > Style > Theme` and use the following link:
 
-`https://github.com/kryo1337/omarchy-minima`
+`https://github.com/kryo1337/omarchy-kryo-minima`
 
 # Post-Install
 

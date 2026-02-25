@@ -2,16 +2,16 @@
   --background-primary: #111214;
   --text-normal: #d4d4d4;
 
-  --background-primary-alt: #111214;
-  --background-secondary: #111214;
-  --background-secondary-alt: #111214;
+  --background-primary-alt: #181a1d;
+  --background-secondary: #181a1d;
+  --background-secondary-alt: #1f2226;
 
   --code-background: #181a1d;
   --code-foreground: #d4d4d4;
 
   --border-color: #26292f;
 
-  --text-selection: rgba(212, 212, 212, 0.2);
+  --text-selection: rgba(160, 0, 64, 0.3);
   --text-selection-fg: #d4d4d4;
 
   --text-title-h1: #d4d4d4;
@@ -21,7 +21,7 @@
   --text-title-h5: #d4d4d4;
   --text-title-h6: #80868f;
   --text-link: #C80050;
-  --markup-code: #C80050;
+  --markup-code: #A00040;
   --text-mark: #C80050;
   --interactive-accent: #C80050;
   --blockquote-border: #26292f;
@@ -29,37 +29,37 @@
   --text-faint: #80868f;
 
   --text-accent: var(--interactive-accent);
-  --text-accent-hover: var(--interactive-accent);
-  --text-error: var(--text-title-h1);
-  --text-error-hover: var(--text-title-h1);
+  --text-accent-hover: #A00040;
+  --text-error: #780030;
+  --text-error-hover: #C80050;
   --text-highlight-bg: rgba(200, 0, 80, 0.3);
   --text-on-accent: #111214;
 
-  --interactive-normal: var(--code-background);
-  --interactive-hover: var(--interactive-accent);
-  --interactive-accent-hover: var(--interactive-accent);
-  --interactive-success: var(--text-title-h2);
+  --interactive-normal: var(--background-secondary-alt);
+  --interactive-hover: #A00040;
+  --interactive-accent-hover: #A00040;
+  --interactive-success: #C80050;
 
   --scrollbar-bg: var(--background-primary);
-  --scrollbar-thumb-bg: var(--code-background);
-  --scrollbar-active-thumb-bg: var(--interactive-accent);
+  --scrollbar-thumb-bg: var(--background-secondary-alt);
+  --scrollbar-active-thumb-bg: var(--text-muted);
 
   --background-modifier-border: var(--border-color);
-  --background-modifier-form-field: var(--code-background);
-  --background-modifier-form-field-highlighted: var(--code-background);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-form-field: var(--background-secondary-alt);
+  --background-modifier-form-field-highlighted: var(--border-color);
+  --background-modifier-box-shadow: rgba(17, 18, 20, 0.5);
   --background-modifier-success: var(--interactive-success);
   --background-modifier-error: var(--text-error);
-  --background-modifier-error-hover: var(--text-error);
-  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --background-modifier-error-hover: var(--text-error-hover);
+  --background-modifier-cover: rgba(17, 18, 20, 0.8);
 
   --link-color: var(--text-link);
-  --link-color-hover: var(--text-link);
+  --link-color-hover: #A00040;
   --link-unresolved-color: var(--text-muted);
   --link-unresolved-opacity: 0.7;
 
-  --tag-color: var(--text-title-h3);
-  --tag-background: var(--code-background);
+  --tag-color: var(--text-normal);
+  --tag-background: var(--background-secondary-alt);
 
   --graph-line: var(--text-muted);
   --graph-node: var(--interactive-accent);
