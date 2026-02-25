@@ -17,7 +17,7 @@ count_cut      = { fg = "#111214", bg = "#780030" }
 count_selected = { fg = "#111214", bg = "#A00040" }
 
 border_symbol = "│"
-border_style  = { fg = "#80868f" }
+border_style  = { fg = "#26292f" }
 
 
 [tabs]
@@ -116,6 +116,10 @@ rules = [
 ]
 
 [icon]
+
+dirs = [
+	{ name = "*", text = "󰉋", fg = "#C80050" }
+]
 
 files = [
 	{ name = ".babelrc", text = "", fg = "#A00040" },

@@ -44,7 +44,7 @@ return {
 					DashboardShortCut = { fg = colors.purple },
 					DashboardFooter = { fg = colors.purple },
 					LineNr = { fg = colors.comment },
-					CursorLineNr = { fg = colors.purple, style = { "bold" } },
+					CursorLineNr = { fg = colors.purple, bold = true },
 					Keyword = { fg = colors.purple },
 					Function = { fg = colors.purple },
 					Type = { fg = colors.purple },
@@ -54,12 +54,12 @@ return {
 					Directory = { fg = colors.purple },
 					Search = { bg = colors.selection, fg = colors.purple },
 					IncSearch = { bg = colors.purple, fg = colors.black },
-					Visual = { bg = colors.selection, style = { "bold" } },
+					Visual = { bg = colors.selection, bold = true },
 					LspReferenceText = { bg = colors.selection },
 					LspReferenceRead = { bg = colors.selection },
 					LspReferenceWrite = { bg = colors.selection },
 					TelescopeSelectionCaret = { fg = colors.purple },
-					TelescopeSelection = { fg = colors.purple, bg = colors.selection, style = { "bold" } },
+					TelescopeSelection = { fg = colors.purple, bg = colors.selection, bold = true },
 					TelescopePromptPrefix = { fg = colors.purple },
 					TelescopeBorder = { fg = colors.purple },
 					NeoTreeDirectoryIcon = { fg = colors.purple },
@@ -71,7 +71,7 @@ return {
 					IndentBlanklineContextChar = { fg = colors.purple },
 					StatusLine = { bg = colors.black },
 					TabLine = { bg = colors.black },
-					TabLineSel = { fg = colors.purple, bg = colors.black, style = { "bold" } },
+					TabLineSel = { fg = colors.purple, bg = colors.black, bold = true },
 					NoiceCmdlineIcon = { fg = colors.purple },
 					NoiceCmdlinePopupBorder = { fg = colors.purple },
 				}
@@ -83,5 +83,51 @@ return {
 		opts = {
 			colorscheme = "dracula",
 		},
+	},
+	{
+		"nvim-lualine/lualine.nvim",
+		opts = function(_, opts)
+			local colors = {
+				bg = "#111214",
+				fg = "#d4d4d4",
+				ruby = "#C80050",
+				ruby_dim = "#A00040",
+				ruby_dark = "#780030",
+				border = "#26292f",
+				muted = "#80868f",
+			}
+			opts.theme = {
+				normal = {
+					a = { bg = colors.ruby, fg = colors.bg, gui = "bold" },
+					b = { bg = colors.border, fg = colors.fg },
+					c = { bg = colors.bg, fg = colors.fg },
+				},
+				insert = {
+					a = { bg = colors.ruby_dim, fg = colors.bg, gui = "bold" },
+					b = { bg = colors.border, fg = colors.fg },
+					c = { bg = colors.bg, fg = colors.fg },
+				},
+				visual = {
+					a = { bg = colors.ruby_dark, fg = colors.bg, gui = "bold" },
+					b = { bg = colors.border, fg = colors.fg },
+					c = { bg = colors.bg, fg = colors.fg },
+				},
+				replace = {
+					a = { bg = colors.ruby_dark, fg = colors.bg, gui = "bold" },
+					b = { bg = colors.border, fg = colors.fg },
+					c = { bg = colors.bg, fg = colors.fg },
+				},
+				command = {
+					a = { bg = colors.ruby_dim, fg = colors.bg, gui = "bold" },
+					b = { bg = colors.border, fg = colors.fg },
+					c = { bg = colors.bg, fg = colors.fg },
+				},
+				inactive = {
+					a = { bg = colors.bg, fg = colors.muted },
+					b = { bg = colors.bg, fg = colors.muted },
+					c = { bg = colors.bg, fg = colors.muted },
+				},
+			}
+		end,
 	},
 }
