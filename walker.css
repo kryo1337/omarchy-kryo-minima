@@ -1,19 +1,17 @@
-@define-color selected-text #c6a0f6;
-@define-color text#cdd6f4;
-@define-color base #0f0f0f;
-@define-color border #cdd6f4;
-@define-color foreground #cdd6f4;
-@define-color background #0f0f0f;
+@define-color selected-text #C80050;
+@define-color text #d4d4d4;
+@define-color base #111214;
+@define-color border #26292f;
+@define-color foreground #d4d4d4;
+@define-color background #111214;
 
-/* Rounded Corners */
 .box-wrapper {
   border-radius: 8px;
 }
 
-/* Selected Item Styling */
 child:selected {
   border-radius: 8px;
-  background-color: mix(black, @background, 0.875);
+  background-color: #181a1d;
   transition: all 0.15s ease-out;
   transition: background-color 0s ease-out;
   box-shadow:
@@ -25,19 +23,16 @@ child:selected .item-box {
   margin-left: 4px;
 }
 
-/* Revert Selected Item Color */
 child:selected .item-box * {
   color: @text;
 }
 
-/* Enable Quick Activation Hints */
 .item-quick-activation {
   font-size: 12px;
   color: alpha(@text, 0.15);
   margin-right: 2rem;
 }
 
-/* Transparent Search Bar */
 .search-container {
   background-color: transparent;
 }

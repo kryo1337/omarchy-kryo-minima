@@ -1,48 +1,39 @@
-/* Omarchy Theme for Obsidian */
-/* Colors sorted by frequency, backgrounds by distance */
-
 .theme-dark, .theme-light {
-  /* Core colors */
-  --background-primary: #0f0f0f;
-  --text-normal: #cdd6f4;
+  --background-primary: #111214;
+  --text-normal: #d4d4d4;
 
-  /* Background variations*/
-  --background-primary-alt: #0f0f0f;
-  --background-secondary: #0f0f0f;
-  --background-secondary-alt: #0f0f0f;
+  --background-primary-alt: #111214;
+  --background-secondary: #111214;
+  --background-secondary-alt: #111214;
 
-  /* Code block colors */
-  --code-background: #1e1e1e;
-  --code-foreground: #bac2de;
+  --code-background: #181a1d;
+  --code-foreground: #d4d4d4;
 
-  /* Border color */
-  --border-color: #737994;
+  --border-color: #26292f;
 
-  /* Selection colors */
-  --text-selection: #f5e0dc;
-  --text-selection-fg: #0f0f0f;
+  --text-selection: rgba(212, 212, 212, 0.2);
+  --text-selection-fg: #d4d4d4;
 
-  --text-title-h1: #a6adc8;
-  --text-title-h2: #cba6f7;
-  --text-title-h3: #cba6f7;
-  --text-title-h4: #a6e3a1;
-  --text-title-h5: #a6e3a1;
-  --text-title-h6: #a10b56;
-  --text-link: #cba6f7;
-  --markup-code: #cba6f7;
-  --text-mark: #94e2d5;
-  --interactive-accent: #cba6f7;
-  --blockquote-border: #b4befe;
-  --text-muted: #737994;  /* Use text-specific color for muted text */
-  --text-faint: #737994;  /* Use text-specific color for faint text */
+  --text-title-h1: #d4d4d4;
+  --text-title-h2: #d4d4d4;
+  --text-title-h3: #d4d4d4;
+  --text-title-h4: #d4d4d4;
+  --text-title-h5: #d4d4d4;
+  --text-title-h6: #80868f;
+  --text-link: #C80050;
+  --markup-code: #C80050;
+  --text-mark: #C80050;
+  --interactive-accent: #C80050;
+  --blockquote-border: #26292f;
+  --text-muted: #80868f;
+  --text-faint: #80868f;
 
-  /* Additional mappings */
   --text-accent: var(--interactive-accent);
   --text-accent-hover: var(--interactive-accent);
   --text-error: var(--text-title-h1);
   --text-error-hover: var(--text-title-h1);
-  --text-highlight-bg: #cdd6f4;  /* Use text color as highlight background */
-  --text-on-accent: #0f0f0f;
+  --text-highlight-bg: rgba(200, 0, 80, 0.3);
+  --text-on-accent: #111214;
 
   --interactive-normal: var(--code-background);
   --interactive-hover: var(--interactive-accent);
@@ -77,13 +68,11 @@
   --graph-node-tag: var(--text-title-h3);
   --graph-node-attachment: var(--text-title-h2);
 
-  /* Fonts */
   --font-interface-theme: "IBM Plex Mono";
   --font-text-theme: "IBM Plex Mono";
   --font-monospace-theme: "Consolas";
 }
 
-/* Headers */
 .cm-header-1, .markdown-rendered h1 { color: var(--text-title-h1); }
 .cm-header-2, .markdown-rendered h2 { color: var(--text-title-h2); }
 .cm-header-3, .markdown-rendered h3 { color: var(--text-title-h3); }
@@ -91,7 +80,6 @@
 .cm-header-5, .markdown-rendered h5 { color: var(--text-title-h5); }
 .cm-header-6, .markdown-rendered h6 { color: var(--text-title-h6); }
 
-/* Code blocks */
 .markdown-rendered code {
   font-family: var(--font-monospace-theme);
   background-color: var(--code-background);
@@ -111,7 +99,6 @@
   color: var(--code-foreground);
 }
 
-/* Syntax highlighting */
 .cm-s-obsidian span.cm-keyword { color: var(--text-title-h1); }
 .cm-s-obsidian span.cm-string { color: var(--text-title-h2); }
 .cm-s-obsidian span.cm-number { color: var(--text-title-h3); }
@@ -120,7 +107,6 @@
 .cm-s-obsidian span.cm-variable { color: var(--text-normal); }
 .cm-s-obsidian span.cm-def { color: var(--text-link); }
 
-/* Highlighted text */
 .markdown-rendered mark,
 .cm-s-obsidian span.cm-highlight,
 mark {
@@ -128,24 +114,20 @@ mark {
   color: var(--code-background) !important;
 }
 
-/* Links */
 .markdown-rendered a {
   color: var(--text-link);
 }
 
-/* Blockquotes */
 .markdown-rendered blockquote {
   border-left: 4px solid var(--blockquote-border);
   padding-left: 1em;
 }
 
-/* Status bar */
 .status-bar {
   background-color: var(--code-background);
   border-top: 1px solid var(--background-modifier-border);
 }
 
-/* Active file */
 .workspace-leaf.mod-active .workspace-leaf-header-title {
   color: var(--interactive-accent);
 }
@@ -155,13 +137,11 @@ mark {
   color: var(--interactive-accent);
 }
 
-/* Text selection */
 ::selection {
   background-color: var(--text-selection);
   color: var(--text-selection-fg);
 }
 
-/* Search results */
 .search-result-file-title {
   color: var(--interactive-accent);
 }
@@ -176,7 +156,6 @@ mark {
   color: var(--code-background);
 }
 
-/* Tables */
 .markdown-rendered table {
   border: 1px solid var(--background-modifier-border);
 }
@@ -190,7 +169,6 @@ mark {
   border: 1px solid var(--background-modifier-border);
 }
 
-/* Callouts */
 .callout {
   border-left: 4px solid var(--interactive-accent);
   background-color: var(--code-background);
@@ -199,13 +177,11 @@ mark {
   color: var(--text-normal);
 }
 
-/* Modal dialogs */
 .modal {
   background-color: var(--background-primary);
   border: 2px solid var(--background-modifier-border);
 }
 
-/* Settings */
 .vertical-tab-header-group-title {
   color: var(--interactive-accent);
 }

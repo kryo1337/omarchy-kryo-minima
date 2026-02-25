@@ -1,130 +1,87 @@
 return {
 	{
-		"catppuccin/nvim",
-		name = "catppuccin",
+		"Mofiqul/dracula.nvim",
+		name = "dracula",
 		priority = 1000,
 		lazy = true,
 		opts = {
-			flavour = "mocha",
-			transparent_background = true,
-			float = {
-				transparent = true,
+			colors = {
+				bg = "#111214",
+				fg = "#d4d4d4",
+				selection = "#181a1d",
+				comment = "#80868f",
+				red = "#780030",
+				orange = "#A00040",
+				yellow = "#A00040",
+				green = "#C80050",
+				purple = "#C80050",
+				cyan = "#C80050",
+				pink = "#C80050",
+				bright_red = "#780030",
+				bright_green = "#C80050",
+				bright_yellow = "#A00040",
+				bright_blue = "#C80050",
+				bright_magenta = "#A00040",
+				bright_cyan = "#C80050",
+				bright_white = "#d4d4d4",
+				menu = "#111214",
+				visual = "#181a1d",
+				gutter_fg = "#80868f",
+				nontext = "#26292f",
+				white = "#d4d4d4",
+				black = "#111214",
 			},
-
-			color_overrides = {
-				mocha = {
-					blue = "#c6a0f6",
-				},
-			},
-
-			custom_highlights = function(colors)
+			transparent_bg = true,
+			italic_comment = true,
+			overrides = function(colors)
 				return {
-					-- Dashboard/Alpha (LazyVim startup screen)
-					AlphaHeader = { fg = colors.mauve },
-					AlphaButtons = { fg = colors.mauve },
-					AlphaShortcut = { fg = colors.mauve },
-					AlphaFooter = { fg = colors.mauve },
-
-					-- Dashboard specific
-					DashboardHeader = { fg = colors.mauve },
-					DashboardCenter = { fg = colors.mauve },
-					DashboardShortCut = { fg = colors.mauve },
-					DashboardFooter = { fg = colors.mauve },
-
-					-- Cursor and line numbers
-					LineNr = { fg = colors.mauve },
-					CursorLineNr = { fg = colors.mauve, style = { "bold" } },
-
-					-- Syntax highlighting
-					Keyword = { fg = colors.mauve },
-					Function = { fg = colors.mauve },
-					Type = { fg = colors.mauve },
-					["@function"] = { fg = colors.mauve },
-					["@keyword"] = { fg = colors.mauve },
-					["@type"] = { fg = colors.mauve },
-
-					-- Directories and folders
-					Directory = { fg = colors.mauve },
-
-					-- Search
-					Search = { bg = colors.surface1, fg = colors.mauve },
-					IncSearch = { bg = colors.mauve, fg = colors.base },
-
-					-- Visual selection
-					Visual = { bg = colors.surface1, style = { "bold" } },
-
-					-- LSP
-					LspReferenceText = { bg = colors.surface1 },
-					LspReferenceRead = { bg = colors.surface1 },
-					LspReferenceWrite = { bg = colors.surface1 },
-
-					-- Telescope
-					TelescopeSelectionCaret = { fg = colors.mauve },
-					TelescopeSelection = { fg = colors.mauve, bg = colors.surface0, style = { "bold" } },
-					TelescopePromptPrefix = { fg = colors.mauve },
-					TelescopeBorder = { fg = colors.mauve },
-
-					-- Neo-tree
-					NeoTreeDirectoryIcon = { fg = colors.mauve },
-					NeoTreeDirectoryName = { fg = colors.mauve },
-
-					-- Git signs
+					AlphaHeader = { fg = colors.purple },
+					AlphaButtons = { fg = colors.purple },
+					AlphaShortcut = { fg = colors.purple },
+					AlphaFooter = { fg = colors.purple },
+					DashboardHeader = { fg = colors.purple },
+					DashboardCenter = { fg = colors.purple },
+					DashboardShortCut = { fg = colors.purple },
+					DashboardFooter = { fg = colors.purple },
+					LineNr = { fg = colors.comment },
+					CursorLineNr = { fg = colors.purple, style = { "bold" } },
+					Keyword = { fg = colors.purple },
+					Function = { fg = colors.purple },
+					Type = { fg = colors.purple },
+					["@function"] = { fg = colors.purple },
+					["@keyword"] = { fg = colors.purple },
+					["@type"] = { fg = colors.purple },
+					Directory = { fg = colors.purple },
+					Search = { bg = colors.selection, fg = colors.purple },
+					IncSearch = { bg = colors.purple, fg = colors.black },
+					Visual = { bg = colors.selection, style = { "bold" } },
+					LspReferenceText = { bg = colors.selection },
+					LspReferenceRead = { bg = colors.selection },
+					LspReferenceWrite = { bg = colors.selection },
+					TelescopeSelectionCaret = { fg = colors.purple },
+					TelescopeSelection = { fg = colors.purple, bg = colors.selection, style = { "bold" } },
+					TelescopePromptPrefix = { fg = colors.purple },
+					TelescopeBorder = { fg = colors.purple },
+					NeoTreeDirectoryIcon = { fg = colors.purple },
+					NeoTreeDirectoryName = { fg = colors.purple },
 					GitSignsAdd = { fg = colors.green },
-					GitSignsChange = { fg = colors.mauve },
+					GitSignsChange = { fg = colors.purple },
 					GitSignsDelete = { fg = colors.red },
-
-					-- Indent guides
-					IndentBlanklineChar = { fg = colors.surface0 },
-					IndentBlanklineContextChar = { fg = colors.mauve },
-
-					-- Statusline components
-					StatusLine = { bg = colors.mantle },
-
-					-- Tabs
-					TabLine = { bg = colors.mantle },
-					TabLineSel = { fg = colors.mauve, bg = colors.base, style = { "bold" } },
-
-					-- Noice (command line)
-					NoiceCmdlineIcon = { fg = colors.mauve },
-					NoiceCmdlinePopupBorder = { fg = colors.mauve },
+					IndentBlanklineChar = { fg = colors.nontext },
+					IndentBlanklineContextChar = { fg = colors.purple },
+					StatusLine = { bg = colors.black },
+					TabLine = { bg = colors.black },
+					TabLineSel = { fg = colors.purple, bg = colors.black, style = { "bold" } },
+					NoiceCmdlineIcon = { fg = colors.purple },
+					NoiceCmdlinePopupBorder = { fg = colors.purple },
 				}
 			end,
-
-			integrations = {
-				cmp = true,
-				gitsigns = true,
-				nvimtree = true,
-				neotree = true,
-				treesitter = true,
-				notify = true,
-				mini = {
-					enabled = true,
-					indentscope_color = "mauve",
-				},
-				telescope = {
-					enabled = true,
-				},
-				which_key = true,
-				alpha = true,
-				dashboard = true,
-			},
 		},
 	},
 	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "catppuccin",
-		},
-	},
-	specs = {
-		{
-			"akinsho/bufferline.nvim",
-			optional = true,
-			opts = function(_, opts)
-				if (vim.g.colors_name or ""):find("catppuccin") then
-					opts.highlights = require("catppuccin.special.bufferline").get_theme()
-				end
-			end,
+			colorscheme = "dracula",
 		},
 	},
 }
