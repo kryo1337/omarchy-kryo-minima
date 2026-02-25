@@ -118,6 +118,19 @@ prepend_conds = [
   { if = "dir", text = "󰉋", fg = "#C80050" }
 ]
 
+dirs = [
+  { name = ".config", text = "", fg = "#C80050" },
+  { name = ".git", text = "", fg = "#C80050" },
+  { name = "Desktop", text = "", fg = "#C80050" },
+  { name = "Documents", text = "󰈙", fg = "#C80050" },
+  { name = "Downloads", text = "󰊿", fg = "#C80050" },
+  { name = "Music", text = "󰎆", fg = "#C80050" },
+  { name = "Pictures", text = "󰉏", fg = "#C80050" },
+  { name = "Public", text = "󰊢", fg = "#C80050" },
+  { name = "Templates", text = "󰏢", fg = "#C80050" },
+  { name = "Videos", text = "󰕧", fg = "#C80050" }
+]
+
 files = [
   { name = ".babelrc", text = "", fg = "#A00040" },
   { name = ".bash_profile", text = "", fg = "#C80050" },
