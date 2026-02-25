@@ -3,7 +3,7 @@ return {
 		"Mofiqul/dracula.nvim",
 		name = "dracula",
 		priority = 1000,
-		lazy = true,
+		lazy = false,
 		opts = {
 			colors = {
 				bg = "#111214",
