@@ -11,8 +11,8 @@
 
   --border-color: #26292f;
 
-  --text-selection: rgba(160, 0, 64, 0.3);
-  --text-selection-fg: #d4d4d4;
+  --text-selection: #1f2226;
+  --text-selection-fg: #ffffff;
 
   --text-title-h1: #d4d4d4;
   --text-title-h2: #d4d4d4;
@@ -20,9 +20,10 @@
   --text-title-h4: #d4d4d4;
   --text-title-h5: #d4d4d4;
   --text-title-h6: #80868f;
+  
   --text-link: #C80050;
-  --markup-code: #A00040;
-  --text-mark: #C80050;
+  --markup-code: #ffea00;
+  --text-mark: #ffffff;
   --interactive-accent: #C80050;
   --blockquote-border: #26292f;
   --text-muted: #80868f;
@@ -30,15 +31,15 @@
 
   --text-accent: var(--interactive-accent);
   --text-accent-hover: #A00040;
-  --text-error: #780030;
+  --text-error: #ff0055;
   --text-error-hover: #C80050;
-  --text-highlight-bg: rgba(200, 0, 80, 0.3);
-  --text-on-accent: #111214;
+  --text-highlight-bg: rgba(200, 0, 80, 0.4);
+  --text-on-accent: #ffffff;
 
   --interactive-normal: var(--background-secondary-alt);
-  --interactive-hover: #A00040;
+  --interactive-hover: #1f2226;
   --interactive-accent-hover: #A00040;
-  --interactive-success: #C80050;
+  --interactive-success: #00ff66;
 
   --scrollbar-bg: var(--background-primary);
   --scrollbar-thumb-bg: var(--background-secondary-alt);
@@ -58,15 +59,23 @@
   --link-unresolved-color: var(--text-muted);
   --link-unresolved-opacity: 0.7;
 
-  --tag-color: var(--text-normal);
-  --tag-background: var(--background-secondary-alt);
+  --tag-color: #d4d4d4;
+  --tag-background: #1f2226;
 
   --graph-line: var(--text-muted);
   --graph-node: var(--interactive-accent);
   --graph-node-unresolved: var(--text-muted);
-  --graph-node-focused: var(--text-link);
-  --graph-node-tag: var(--text-title-h3);
-  --graph-node-attachment: var(--text-title-h2);
+  --graph-node-focused: #ff0055;
+  --graph-node-tag: #00eeff;
+  --graph-node-attachment: #00ff66;
+
+  --syn-keyword: #ff0055;
+  --syn-string: #ffea00;
+  --syn-number: #ff00aa;
+  --syn-comment: #80868f;
+  --syn-operator: #00eeff;
+  --syn-variable: #d4d4d4;
+  --syn-def: #00ff66;
 
   --font-interface-theme: "IBM Plex Mono";
   --font-text-theme: "IBM Plex Mono";
@@ -99,19 +108,19 @@
   color: var(--code-foreground);
 }
 
-.cm-s-obsidian span.cm-keyword { color: var(--text-title-h1); }
-.cm-s-obsidian span.cm-string { color: var(--text-title-h2); }
-.cm-s-obsidian span.cm-number { color: var(--text-title-h3); }
-.cm-s-obsidian span.cm-comment { color: var(--text-muted); }
-.cm-s-obsidian span.cm-operator { color: var(--text-link); }
-.cm-s-obsidian span.cm-variable { color: var(--text-normal); }
-.cm-s-obsidian span.cm-def { color: var(--text-link); }
+.cm-s-obsidian span.cm-keyword { color: var(--syn-keyword); }
+.cm-s-obsidian span.cm-string { color: var(--syn-string); }
+.cm-s-obsidian span.cm-number { color: var(--syn-number); }
+.cm-s-obsidian span.cm-comment { color: var(--syn-comment); }
+.cm-s-obsidian span.cm-operator { color: var(--syn-operator); }
+.cm-s-obsidian span.cm-variable { color: var(--syn-variable); }
+.cm-s-obsidian span.cm-def { color: var(--syn-def); }
 
 .markdown-rendered mark,
 .cm-s-obsidian span.cm-highlight,
 mark {
   background-color: var(--text-highlight-bg) !important;
-  color: var(--code-background) !important;
+  color: var(--text-mark) !important;
 }
 
 .markdown-rendered a {
@@ -153,7 +162,8 @@ mark {
 }
 
 .search-result-file-matched-text {
-  color: var(--code-background);
+  color: var(--text-error);
+  background-color: rgba(255, 0, 85, 0.15);
 }
 
 .markdown-rendered table {

@@ -3,8 +3,8 @@ command_timeout = 200
 format = "$conda[$directory$git_branch$git_status]($style)$character"
 
 [character]
-error_symbol = "[❯](fg:#780030)"
-success_symbol = "[❯](fg:#C80050)"
+error_symbol = "[❯](fg:#ff0055)"
+success_symbol = "[❯](fg:#d4d4d4)"
 
 [directory]
 truncation_length = 2
