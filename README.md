@@ -25,6 +25,7 @@ These are applied automatically by `omarchy-theme-set`:
 - Alacritty
 - btop
 - Obsidian
+- VS Code (theme only)
 - Chromium
 - Icon theme
 
@@ -53,6 +54,8 @@ spicetify apply
 
 ## VS Code
 
+Theme is auto-set. For full color customizations:
+
 ```bash
-jq -s '.[0] * .[1]' ~/.config/Code/User/settings.json ~/.config/omarchy/themes/kryo-minima/vscode.json > /tmp/vscode-settings.json && mv /tmp/vscode-settings.json ~/.config/Code/User/settings.json
+jq -s '.[0] * (.[1] | del(.name, .extension))' ~/.config/Code/User/settings.json ~/.config/omarchy/themes/kryo-minima/vscode.json > /tmp/vscode-settings.json && mv /tmp/vscode-settings.json ~/.config/Code/User/settings.json
 ```

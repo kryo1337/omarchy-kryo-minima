@@ -1,4 +1,6 @@
 {
+  "name": "Dracula Theme",
+  "extension": "dracula-theme.theme-dracula",
   "workbench.colorTheme": "Dracula Theme",
   "workbench.colorCustomizations": {
     "[Dracula Theme]": {
