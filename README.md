@@ -2,6 +2,16 @@
 
 A Dark Crimson minimalistic theme for [Omarchy](https://omarchy.org)
 
+## Showcase
+
+<img src="assets/s1.png" alt="Screenshot 1" width="49%"/> <img src="assets/s2.png" alt="Screenshot 2" width="49%"/>
+
+### Backgrounds
+
+<img src="backgrounds/1-oas.png" width="24%"/> <img src="backgrounds/2-oas.png" width="24%"/> <img src="backgrounds/3-city.png" width="24%"/> <img src="backgrounds/4-girl.png" width="24%"/>
+
+<img src="backgrounds/5-linkoping.png" width="24%"/> <img src="backgrounds/6-rain.png" width="24%"/> <img src="backgrounds/7-particles.png" width="22%"/>
+
 ## Installation
 
 ### Command Line
